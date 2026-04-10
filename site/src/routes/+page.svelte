@@ -20,7 +20,7 @@
 </svelte:head>
 
 <!-- Hero Section with Auto-Sliding Background -->
-<section class="relative h-screen min-h-[600px] max-h-[1000px] overflow-hidden">
+<section class="relative h-[72vh] min-h-[520px] max-h-[920px] overflow-hidden sm:h-screen sm:min-h-[600px] sm:max-h-[1000px]">
 	<!-- Sliding Background Images (Fixed/Parallax) -->
 	{#each slides as slide, i}
 		<div
@@ -41,16 +41,21 @@
 	<!-- Hero Content -->
 	<div class="relative z-10 flex h-full items-center">
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6">
-			<div class="max-w-2xl">
-				<div class="mb-5 inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-2">
-					<span class="h-2 w-2 rounded-full bg-gold-400 animate-pulse"></span>
-					<span class="text-xs sm:text-sm font-medium text-gold-400">Industrial Excellence Since Establishment</span>
-				</div>
+			<div class="max-w-3xl">
+				<p class="text-[11px] sm:text-xs font-semibold tracking-[0.28em] text-gold-300/90 uppercase">
+					Turning Workshop LLC
+				</p>
+				<h1 class="mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] tracking-tight text-white">
+					Global <span class="text-gold-400">Prime</span> Engineering
+				</h1>
+				<p class="mt-5 inline-flex rounded-full border border-gold-500/40 bg-gold-500/10 px-4 py-2 text-xs sm:text-sm font-semibold text-gold-300">
+					Precision. Strength. Legacy Since 1968.
+				</p>
 
-				<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-tight text-white">
+				<h2 class="mt-5 text-2xl sm:text-3xl md:text-4xl font-black leading-[1.1] tracking-tight text-white">
 					Leading Sharjah's
 					<span class="text-gold-400">Industrial Excellence</span>
-				</h1>
+				</h2>
 
 				<p class="mt-5 max-w-lg text-base sm:text-lg leading-relaxed text-gray-300">
 					Precision Mechanical Repair & Industrial Fabrication. Decades of technical expertise

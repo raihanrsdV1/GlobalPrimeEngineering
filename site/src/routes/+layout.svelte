@@ -118,7 +118,7 @@
 					</div>
 				</div>
 				<p class="mt-4 text-sm leading-relaxed text-gray-400">
-					Sharjah's premier destination for precision mechanical repair and industrial fabrication.
+					Precision. Strength. Legacy Since 1968. Trusted for precision mechanical repair and industrial fabrication.
 				</p>
 			</div>
 
@@ -167,7 +167,7 @@
 						<svg class="mt-0.5 h-4 w-4 shrink-0 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 						</svg>
-						<a href="mailto:sales@globalprimeengineering.ae" class="text-sm text-gray-400 transition-colors hover:text-white break-all">sales@globalprimeengineering.ae</a>
+						<a href="mailto:sales@globalprimeengineering.ae" class="text-sm text-gray-400 transition-colors hover:text-white break-all">info@globalprimeengineering.ae</a>
 					</li>
 					<li class="flex items-start gap-2.5">
 						<svg class="mt-0.5 h-4 w-4 shrink-0 text-green-500" fill="currentColor" viewBox="0 0 24 24">

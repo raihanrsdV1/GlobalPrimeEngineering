@@ -9,10 +9,10 @@
 	<div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 pb-12 sm:pb-16 pt-32">
 		<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">Equipment & Facility</span>
 		<h1 class="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-			State-of-the-Art <span class="text-gold-400">Machinery</span>
+			Global Prime <span class="text-gold-400">Engineering Capability</span>
 		</h1>
 		<p class="mt-3 max-w-xl text-sm sm:text-lg text-gray-300">
-			Heavy-duty industrial machinery capable of handling the most demanding projects with precision.
+			Precision. Strength. Legacy Since 1968. Heavy-duty machinery for demanding industrial projects.
 		</p>
 	</div>
 </section>

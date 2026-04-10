@@ -9,10 +9,10 @@
 	<div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 pb-12 sm:pb-16 pt-32">
 		<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">Contact Us</span>
 		<h1 class="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-			Let's <span class="text-gold-400">Work Together</span>
+			Global Prime Engineering <span class="text-gold-400">Turning Workshop LLC</span>
 		</h1>
 		<p class="mt-3 max-w-xl text-sm sm:text-lg text-gray-300">
-			Ready to discuss your project? Reach out for expert consultation and a free quote.
+			Precision. Strength. Legacy Since 1968. Reach out for expert consultation and a fast quote.
 		</p>
 	</div>
 </section>
@@ -168,7 +168,7 @@
 						</div>
 						<div class="min-w-0">
 							<h3 class="font-semibold text-white text-sm">Email Us</h3>
-							<a href="mailto:sales@globalprimeengineering.ae" class="text-sm text-gold-400 hover:text-gold-300 transition-colors break-all">sales@globalprimeengineering.ae</a>
+							<a href="mailto:sales@globalprimeengineering.ae" class="text-sm text-gold-400 hover:text-gold-300 transition-colors break-all">info@globalprimeengineering.ae</a>
 						</div>
 					</div>
 				</div>

@@ -9,11 +9,30 @@
 	<div class="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 pb-12 sm:pb-16 pt-32">
 		<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">Our Services</span>
 		<h1 class="mt-2 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
-			Comprehensive <span class="text-gold-400">Industrial Solutions</span>
+			Precision Engineering <span class="text-gold-400">Service Portfolio</span>
 		</h1>
-		<p class="mt-3 max-w-xl text-sm sm:text-lg text-gray-300">
-			From precision machining to advanced fabrication, end-to-end mechanical services for every industrial need.
+		<p class="mt-3 max-w-2xl text-sm sm:text-lg text-gray-300">
+			Precision. Strength. Legacy Since 1968. End-to-end solutions for industrial, construction, and marine sectors.
 		</p>
+	</div>
+</section>
+
+<!-- Service Summary -->
+<section class="bg-navy-900 py-10 sm:py-12 border-y border-white/10">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6">
+		<div class="flex flex-wrap gap-2.5 sm:gap-3">
+			{#each [
+				'Precision Turning & Machining',
+				'Lathe Machine Works',
+				'CNC Laser Cutting & Bending',
+				'Metal Fabrication',
+				'Equipment Maintenance & Repair',
+				'Marine Engineering Support',
+				'Custom Engineering Solutions'
+			] as item}
+				<span class="rounded-full border border-gold-500/30 bg-gold-500/10 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-gold-300">{item}</span>
+			{/each}
+		</div>
 	</div>
 </section>
 
@@ -170,13 +189,13 @@
 				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
 					<span class="text-xs font-semibold text-gold-400">04</span>
 				</div>
-				<h2 class="text-2xl sm:text-3xl font-bold text-white">Laser Cutting & Waterjet Machining</h2>
+				<h2 class="text-2xl sm:text-3xl font-bold text-white">CNC Laser Cutting, Bending & Profile Work</h2>
 				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
-					High-speed, high-precision profile cutting for sheet metal. Clean edges with zero contact,
-					minimizing secondary finishing. Intricate patterns with state-of-the-art equipment.
+					High-speed, high-precision profile cutting and bending for sheet metal applications.
+					Clean edges, repeatable accuracy, and minimal secondary finishing.
 				</p>
 				<ul class="mt-5 space-y-2.5">
-					{#each ['CNC laser cutting for complex metal designs', 'Waterjet machining for heat-sensitive materials', 'Minimal secondary finishing required'] as item}
+					{#each ['CNC laser cutting for complex metal designs', 'Press brake bending for formed components', 'Minimal secondary finishing required'] as item}
 						<li class="flex items-start gap-2.5">
 							<svg class="mt-0.5 h-4 w-4 shrink-0 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
 								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -202,10 +221,10 @@
 				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
 					Professional Argon, Aluminum, and Stainless Steel welding. Certified welders handle all
 					materials with precision. Structural steel welding, frame construction, and marine
-					fabrication for ship components and offshore structures.
+					engineering support for ship components and offshore structures.
 				</p>
 				<ul class="mt-5 space-y-2.5">
-					{#each ['Argon, ARC, MIG/TIG welding capabilities', 'Structural steel & frame construction', 'Marine fabrication for ship components'] as item}
+					{#each ['Argon, ARC, MIG/TIG welding capabilities', 'Structural steel & frame construction', 'Marine engineering support for ship components'] as item}
 						<li class="flex items-start gap-2.5">
 							<svg class="mt-0.5 h-4 w-4 shrink-0 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
 								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -291,7 +310,7 @@
 	<div class="mx-auto max-w-4xl px-4 sm:px-6 text-center">
 		<h2 class="text-2xl sm:text-3xl font-bold text-white">Need a Custom Solution?</h2>
 		<p class="mt-3 text-sm sm:text-base text-gray-400">
-			Every industrial challenge is unique. Contact us for a tailored solution from our engineering team.
+			Every industrial challenge is unique. Contact us for tailored custom engineering solutions from our team.
 		</p>
 		<div class="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
 			<a href="/contact" class="inline-flex items-center justify-center rounded-lg bg-gold-500 px-7 py-3.5 text-sm sm:text-base font-semibold text-navy-900 transition-all hover:bg-gold-400 hover:shadow-xl hover:shadow-gold-500/25">
