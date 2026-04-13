@@ -36,13 +36,13 @@
 	</div>
 </section>
 
-<!-- Service 3: CNC Lathe & Milling -->
+<!-- Service 1: CNC Lathe & Milling -->
 <section class="bg-navy-900 py-14 sm:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6">
 		<div class="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
 			<div>
 				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
-					<span class="text-xs font-semibold text-gold-400">03</span>
+					<span class="text-xs font-semibold text-gold-400">01</span>
 				</div>
 				<h2 class="text-2xl sm:text-3xl font-bold text-white">CNC Lathe & Milling</h2>
 				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
@@ -114,36 +114,6 @@
 	</div>
 </section>
 
-<!-- Service 1: Engine Rebuilding -->
-<section class="bg-navy-900 py-14 sm:py-20">
-	<div class="mx-auto max-w-7xl px-4 sm:px-6">
-		<div class="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
-			<div>
-				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
-					<span class="text-xs font-semibold text-gold-400">01</span>
-				</div>
-				<h2 class="text-2xl sm:text-3xl font-bold text-white">Engine Rebuilding & Cylinder Block Boring</h2>
-				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
-					Expert boring services using precision equipment to achieve optimal engine performance and
-					longevity. We restore cylinders to OEM specifications with micron-level accuracy.
-				</p>
-				<ul class="mt-5 space-y-2.5">
-					{#each ['Cylinder block boring & honing to OEM specs', 'Complete engine overhaul and rebuilding', 'Head seats & head facing with perfect flatness', 'Custom turning jobs for industrial parts'] as item}
-						<li class="flex items-start gap-2.5">
-							<svg class="mt-0.5 h-4 w-4 shrink-0 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-							</svg>
-							<span class="text-sm text-gray-300">{item}</span>
-						</li>
-					{/each}
-				</ul>
-			</div>
-			<div>
-				<img src="/images/precision-machining.png" alt="Engine rebuilding and cylinder block boring" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
-			</div>
-		</div>
-	</div>
-</section>
 
 <!-- Service 2: Crankshaft Grinding -->
 <section class="bg-navy-800 py-14 sm:py-20">
@@ -176,9 +146,42 @@
 	</div>
 </section>
 
+<!-- Service 3: Engine Rebuilding -->
+<section class="bg-navy-900 py-14 sm:py-20">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6">
+		<div class="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
+			<div>
+				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
+					<span class="text-xs font-semibold text-gold-400">03</span>
+				</div>
+				<h2 class="text-2xl sm:text-3xl font-bold text-white">Engine Rebuilding & Cylinder Block Boring</h2>
+				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
+					Expert boring services using precision equipment to achieve optimal engine performance and
+					longevity. We restore cylinders to OEM specifications with micron-level accuracy.
+				</p>
+				<ul class="mt-5 space-y-2.5">
+					{#each ['Cylinder block boring & honing to OEM specs', 'Complete engine overhaul and rebuilding', 'Head seats & head facing with perfect flatness', 'Custom turning jobs for industrial parts'] as item}
+						<li class="flex items-start gap-2.5">
+							<svg class="mt-0.5 h-4 w-4 shrink-0 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
+								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+							</svg>
+							<span class="text-sm text-gray-300">{item}</span>
+						</li>
+					{/each}
+				</ul>
+			</div>
+			<div>
+				<img src="/images/precision-machining.png" alt="Engine rebuilding and cylinder block boring" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
+			</div>
+		</div>
+	</div>
+</section>
 
 
-<!-- Service 4: Laser Cutting & Waterjet -->
+
+
+
+<!-- Service 5: Laser Cutting & Waterjet -->
 <section class="bg-navy-800 py-14 sm:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6">
 		<div class="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
@@ -187,7 +190,7 @@
 			</div>
 			<div class="order-1 lg:order-2">
 				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
-					<span class="text-xs font-semibold text-gold-400">04</span>
+					<span class="text-xs font-semibold text-gold-400">05</span>
 				</div>
 				<h2 class="text-2xl sm:text-3xl font-bold text-white">CNC Laser Cutting, Bending & Profile Work</h2>
 				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
@@ -209,13 +212,13 @@
 	</div>
 </section>
 
-<!-- Service 5: Welding -->
+<!-- Service 6: Welding -->
 <section class="bg-navy-900 py-14 sm:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6">
 		<div class="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
 			<div>
 				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
-					<span class="text-xs font-semibold text-gold-400">05</span>
+					<span class="text-xs font-semibold text-gold-400">06</span>
 				</div>
 				<h2 class="text-2xl sm:text-3xl font-bold text-white">Arc MIG/TIG Welding</h2>
 				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
@@ -241,7 +244,7 @@
 	</div>
 </section>
 
-<!-- Service 6: Motor Rewinding -->
+<!-- Service 7: Motor Rewinding -->
 <section class="bg-navy-800 py-14 sm:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6">
 		<div class="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
@@ -250,7 +253,7 @@
 			</div>
 			<div class="order-1 lg:order-2">
 				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
-					<span class="text-xs font-semibold text-gold-400">06</span>
+					<span class="text-xs font-semibold text-gold-400">07</span>
 				</div>
 				<h2 class="text-2xl sm:text-3xl font-bold text-white">Motor Rewinding (AC & DC)</h2>
 				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
@@ -272,13 +275,13 @@
 	</div>
 </section>
 
-<!-- Service 7: Hydraulic Equipment -->
+<!-- Service 8: Hydraulic Equipment -->
 <section class="bg-navy-900 py-14 sm:py-20">
 	<div class="mx-auto max-w-7xl px-4 sm:px-6">
 		<div class="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
 			<div>
 				<div class="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-1 mb-3">
-					<span class="text-xs font-semibold text-gold-400">07</span>
+					<span class="text-xs font-semibold text-gold-400">08</span>
 				</div>
 				<h2 class="text-2xl sm:text-3xl font-bold text-white">Hydraulic Equipment Servicing</h2>
 				<p class="mt-3 text-sm sm:text-base text-gray-400 leading-relaxed">
@@ -297,7 +300,7 @@
 				</ul>
 			</div>
 			<div>
-				<img src="/images/industrial-maintenance.png" alt="Hydraulic equipment servicing" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
+				<img src="/images/hydraulic-press.jpeg" alt="Hydraulic equipment servicing" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
 			</div>
 		</div>
 	</div>

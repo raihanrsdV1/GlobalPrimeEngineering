@@ -32,7 +32,7 @@
 			<!-- Hydraulic Press -->
 			<div class="group relative overflow-hidden rounded-xl border border-white/10 bg-navy-800 transition-all hover:border-gold-500/30 hover:shadow-xl hover:shadow-gold-500/5">
 				<div class="aspect-[4/3] overflow-hidden">
-					<img src="/images/advanced-fabrication.png" alt="400-ton hydraulic press" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
+					<img src="/images/hydraulic-press.jpeg" alt="400-ton hydraulic press" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
 				</div>
 				<div class="p-5">
 					<div class="mb-2 flex items-center justify-between gap-2 flex-wrap">
@@ -168,7 +168,7 @@
 
 			<div class="grid gap-3 sm:gap-4 grid-cols-2 lg:grid-cols-3">
 				<div class="group overflow-hidden rounded-xl col-span-2 aspect-[2/1] lg:aspect-auto lg:row-span-2">
-					<img src="/images/industrial-maintenance.png" alt="Main workshop floor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+					<img src="/images/workers.jpeg" alt="Main workshop floor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
 					<img src="/images/cnc-lathe.jpg" alt="CNC machining area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />

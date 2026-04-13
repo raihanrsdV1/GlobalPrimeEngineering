@@ -233,7 +233,7 @@
 				<div class="relative order-2 lg:order-1">
 					<div class="absolute -inset-3 rounded-2xl bg-gradient-to-br from-gold-500/15 to-navy-600/15 blur-2xl"></div>
 					<img
-						src="/images/industrial-maintenance.png"
+						src="/images/workers.jpeg"
 						alt="Global Prime Engineering workshop with technician"
 						class="relative rounded-2xl shadow-2xl shadow-black/30 border border-white/10 w-full"
 						loading="lazy"
