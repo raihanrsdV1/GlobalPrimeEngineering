@@ -64,7 +64,7 @@
 						<svg class="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
 						</svg>
-						<span class="text-sm font-medium">Max Capacity: 6m</span>
+						<span class="text-sm font-medium">Max Capacity: 10m</span>
 					</div>
 				</div>
 			</div>
@@ -171,24 +171,81 @@
 					<img src="/images/workers.jpeg" alt="Main workshop floor" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
-					<img src="/images/cnc-lathe.jpg" alt="CNC machining area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+					<img src="/images/workshop-img-1.png" alt="CNC machining area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
-					<img src="/images/custom-fabrication.jpeg" alt="Welding bay" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+					<img src="/images/workshop-img-2.png" alt="Welding bay" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
-					<img src="/images/precision-machining.png" alt="Engine rebuild area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+					<img src="/images/workshop-img-3.png" alt="Engine rebuild area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
-					<img src="/images/cnc-laser-cutting.jpg" alt="Fabrication zone" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+					<img src="/images/workshop-img-4.png" alt="Fabrication zone" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
-					<img src="/images/advanced-fabrication.png" alt="Quality control area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+					<img src="/images/workshop-img-5.png" alt="Quality control area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
-					<img src="/images/cnc-milling.jpeg" alt="CNC milling area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+					<img src="/images/workshop-img-6.png" alt="CNC milling area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+				</div>
+				<div class="group overflow-hidden rounded-xl aspect-[4/3]">
+					<img src="/images/precision-machining.png" alt="CNC milling area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
+				</div><div class="group overflow-hidden rounded-xl aspect-[4/3]">
+					<img src="/images/cnc-lathe.jpg" alt="CNC lathe area" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 rounded-xl border border-white/10" loading="lazy" />
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Complete Machinery List -->
+<section class="bg-navy-900 py-16 sm:py-24">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6">
+		<div class="text-center mb-12">
+			<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">Full Inventory</span>
+			<h2 class="mt-2 text-2xl sm:text-3xl font-bold text-white">Complete Machinery List</h2>
+			<p class="mt-3 text-sm sm:text-base text-gray-400 max-w-2xl mx-auto">
+				Our workshop houses a comprehensive range of industrial machines for every engineering need.
+			</p>
+		</div>
+
+		<div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+			{#each [
+				'CNC Lathe Machine',
+				'CNC Milling Machine',
+				'CNC Laser Machine',
+				'Waterjet Machine',
+				'Milling Machine',
+				'Shaping Machine',
+				'Skimming Machine',
+				'Hobbing Machine',
+				'Hydraulic Press (400 Ton)',
+				'Surface Grinding Machine',
+				'Gear Manufacturing Machine',
+				'Plate Cutting & Bending Machine',
+				'Motor Rewinding Machine',
+				'Crank Shaft Grinding Machine',
+				'Engine Block Facing Machine',
+				'Engine Block Line Boring Machine',
+				'Engine Block Honing Machine',
+				'Cylinder Head Facing Machine',
+				'Cylinder Head Pressure Test Machine',
+				'Cylinder Head Seat Cutting Machine',
+				'Hydraulic Cylinder Pressure Testing Machine',
+				'Dynamic Balancing Machine',
+				'Connecting Rod Bush Boring Machine',
+				'Brake Shoe Riveting Machine',
+				'Thread Cutting Machine',
+				'Power Hacksaw Machine',
+				'Cast Iron / Aluminum / SS Welding Machines'
+			] as machine}
+				<div class="flex items-center gap-2.5 rounded-lg border border-white/10 bg-navy-800/50 px-4 py-3 transition-all hover:border-gold-500/20">
+					<svg class="h-4 w-4 shrink-0 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+					</svg>
+					<span class="text-sm text-gray-300">{machine}</span>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>

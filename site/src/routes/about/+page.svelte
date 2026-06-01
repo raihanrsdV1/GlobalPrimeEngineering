@@ -24,7 +24,7 @@
 			<div class="relative">
 				<div class="absolute -inset-3 rounded-2xl bg-gradient-to-br from-gold-500/10 to-navy-600/20 blur-2xl"></div>
 				<img
-					src="/images/industrial-maintenance.png"
+					src="/images/industrial-maintenance-2.png"
 					alt="Global Prime Engineering workshop floor"
 					class="relative rounded-2xl shadow-2xl shadow-black/30 border border-white/10 w-full"
 					loading="lazy"
@@ -150,6 +150,85 @@
 				<div class="p-5">
 					<h3 class="text-base sm:text-lg font-bold text-white">Manufacturing Plants</h3>
 					<p class="mt-1.5 text-sm text-gray-400">Production line equipment repair, custom part fabrication, and preventive maintenance.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Leadership -->
+<section class="relative">
+	<div class="parallax-bg absolute inset-0" style="background-image: url('/images/cnc-lathe.jpg')"></div>
+	<div class="absolute inset-0 bg-navy-900/92"></div>
+	<div class="relative z-10 py-16 sm:py-24">
+		<div class="mx-auto max-w-5xl px-4 sm:px-6">
+			<div class="text-center mb-12 sm:mb-16">
+				<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">Our Leadership</span>
+				<h2 class="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold text-white">The People Behind Global Prime</h2>
+				<p class="mt-3 text-sm sm:text-base text-gray-400 max-w-2xl mx-auto">
+					A family legacy of engineering excellence, built on decades of dedication, innovation, and trust.
+				</p>
+			</div>
+
+			<div class="space-y-8 sm:space-y-10">
+				<!-- Chairman -->
+				<div class="rounded-2xl border border-white/10 bg-navy-800/60 backdrop-blur-sm p-6 sm:p-8">
+					<div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+						<div class="shrink-0">
+							<div class="h-24 w-24 sm:h-28 sm:w-28 rounded-full border-3 border-gold-500/40 overflow-hidden bg-navy-700">
+								<img src="/images/chairman.png" alt="Mohammed Anis Ul Alam - Chairman" class="h-full w-full object-cover" loading="lazy" />
+							</div>
+						</div>
+						<div class="text-center sm:text-left flex-1">
+							<p class="text-xs font-semibold tracking-wider text-gold-400 uppercase">Chairman</p>
+							<h3 class="mt-1 text-lg sm:text-xl font-bold text-white">Mohammed Anis Ul Alam</h3>
+							<blockquote class="mt-3 border-l-2 border-gold-500/30 pl-4 sm:pl-5">
+								<p class="text-sm sm:text-base text-gray-300 italic leading-relaxed">
+									"Engineering excellence is built on dedication, technology, and teamwork. At Global Prime Engineering Turning Workshop, we focus on high-quality turning and machining solutions to meet the growing demands of the industry. Our goal is to strengthen our capabilities with modern CNC machinery and skilled professionals, ensuring precision and reliability for every project."
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<!-- Director -->
+				<div class="rounded-2xl border border-white/10 bg-navy-800/60 backdrop-blur-sm p-6 sm:p-8">
+					<div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+						<div class="shrink-0">
+							<div class="h-24 w-24 sm:h-28 sm:w-28 rounded-full border-3 border-gold-500/40 overflow-hidden bg-navy-700">
+								<img src="/images/director.png" alt="Mohammed Mustan Billah Adil - Director" class="h-full w-full object-cover" loading="lazy" />
+							</div>
+						</div>
+						<div class="text-center sm:text-left flex-1">
+							<p class="text-xs font-semibold tracking-wider text-gold-400 uppercase">Director</p>
+							<h3 class="mt-1 text-lg sm:text-xl font-bold text-white">Mohammed Mustan Billah Adil</h3>
+							<blockquote class="mt-3 border-l-2 border-gold-500/30 pl-4 sm:pl-5">
+								<p class="text-sm sm:text-base text-gray-300 italic leading-relaxed">
+									"Trust and quality are the foundation of our company. Global Prime Engineering Turning Workshop was established with a vision to provide dependable engineering services and build long-term relationships with our clients. With hard work, innovation, and commitment, we look forward to a strong future in advanced machining and CNC technology."
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				<!-- Managing Director -->
+				<div class="rounded-2xl border border-white/10 bg-navy-800/60 backdrop-blur-sm p-6 sm:p-8">
+					<div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+						<div class="shrink-0">
+							<div class="h-24 w-24 sm:h-28 sm:w-28 rounded-full border-3 border-gold-500/40 overflow-hidden bg-navy-700">
+								<img src="/images/managing-director.png" alt="Mohammad Habib Al Hasan Shahied - Managing Director" class="h-full w-full object-cover" loading="lazy" />
+							</div>
+						</div>
+						<div class="text-center sm:text-left flex-1">
+							<p class="text-xs font-semibold tracking-wider text-gold-400 uppercase">Managing Director</p>
+							<h3 class="mt-1 text-lg sm:text-xl font-bold text-white">Mohammad Habib Al Hasan Shahied</h3>
+							<blockquote class="mt-3 border-l-2 border-gold-500/30 pl-4 sm:pl-5">
+								<p class="text-sm sm:text-base text-gray-300 italic leading-relaxed">
+									"At Global Prime Engineering Turning Workshop, our mission is to deliver precision, quality, and reliability in every job we undertake. With advanced engineering solutions and the trust of our valued clients, we are committed to continuous growth and innovation. Our future vision is to expand into modern CNC technology and provide world-class machining services in the UAE."
+								</p>
+							</blockquote>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

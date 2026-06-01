@@ -22,13 +22,18 @@
 	<div class="mx-auto max-w-7xl px-4 sm:px-6">
 		<div class="flex flex-wrap gap-2.5 sm:gap-3">
 			{#each [
-				'Precision Turning & Machining',
-				'Lathe Machine Works',
-				'CNC Laser Cutting & Bending',
-				'Metal Fabrication',
-				'Equipment Maintenance & Repair',
-				'Marine Engineering Support',
-				'Custom Engineering Solutions'
+				'CNC Lathe & Milling',
+				'Crankshaft Grinding',
+				'Engine Rebuilding',
+				'Laser Cutting & Waterjet',
+				'Arc MIG/TIG Welding',
+				'Motor Rewinding (AC & DC)',
+				'Hydraulic Servicing',
+				'Gear Making & Repair',
+				'Fabrication & Forming',
+				'Moulding Work',
+				'Surface Grinding',
+				'Oilfield Equipment'
 			] as item}
 				<span class="rounded-full border border-gold-500/30 bg-gold-500/10 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-gold-300">{item}</span>
 			{/each}
@@ -50,7 +55,7 @@
 					Precision turning for shafts, bushings, and bolts with micron-level tolerances.
 				</p>
 				<ul class="mt-5 space-y-2.5">
-					{#each ['CNC lathe turning (6m length, 1.2m diameter capacity)', 'Multi-axis CNC milling for custom brackets', 'Vertical milling & radial drilling for heavy plates'] as item}
+					{#each ['CNC lathe turning (10m length, 1.2m diameter capacity)', 'Multi-axis CNC milling for custom brackets', 'Vertical milling & radial drilling for heavy plates'] as item}
 						<li class="flex items-start gap-2.5">
 							<svg class="mt-0.5 h-4 w-4 shrink-0 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
 								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -307,6 +312,44 @@
 </section>
 
 
+
+<!-- Comprehensive Services Grid -->
+<section class="bg-navy-900 py-16 sm:py-24">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6">
+		<div class="text-center mb-12">
+			<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">Full Capability List</span>
+			<h2 class="mt-2 text-2xl sm:text-3xl font-bold text-white">Our Complete Service Portfolio</h2>
+			<p class="mt-3 text-sm sm:text-base text-gray-400 max-w-2xl mx-auto">
+				From precision machining to large-scale industrial projects, we offer an extensive range of engineering solutions.
+			</p>
+		</div>
+
+		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			{#each [
+				{ title: 'Gear Making & Shaper Works', desc: 'All types of gear manufacturing, hobbing, and shaper machine operations for industrial gears.' },
+				{ title: 'Gear Box Making & Repairing', desc: 'Complete gear box assembly, repair, and reconditioning for industrial and automotive applications.' },
+				{ title: 'Moulding Work', desc: 'Precision moulding in CI, Cast Iron, Bronze, and Brass for custom industrial components.' },
+				{ title: 'Surface & Cylindrical Grinding', desc: 'High-precision surface and cylindrical grinding for tight-tolerance machined parts.' },
+				{ title: 'Axle Assembly & Repairing', desc: 'Specialized repair and modification of heavy vehicle axles with straightening and welding.' },
+				{ title: 'Belt Conveyor Making & Repairing', desc: 'Design, fabrication, and repair of belt conveyor systems for industrial material handling.' },
+				{ title: 'Dies & Tools Making', desc: 'Custom dies, jigs, fixtures, and precision tooling for manufacturing operations.' },
+				{ title: 'Nylon, Teflon & MS Roller Making', desc: 'Manufacturing of nylon, Teflon, and mild steel rollers for conveyor and industrial use.' },
+				{ title: 'Oilfield Equipment Manufacturing', desc: 'Manufacturing and repair of oilfield equipment for the petroleum and energy sector.' },
+				{ title: 'Steel Mezzanine Floor Making', desc: 'Design and fabrication of steel mezzanine floors for warehouses and industrial facilities.' },
+				{ title: 'Machine Installation & Aligning', desc: 'Industrial machine manufacturing, precision installation, and alignment services.' },
+				{ title: 'Crusher & Cement Plant Equipment', desc: 'Development and repair of crusher and cement plant equipment and components.' },
+				{ title: 'Product Design & Development', desc: 'End-to-end product design, prototyping, and development for custom engineering needs.' },
+				{ title: 'Butterfly Valve & Chain Wheel', desc: 'Manufacturing of butterfly valve chain wheel operators for industrial flow control.' },
+				{ title: 'Auto Mechanical Turning Works', desc: 'Precision auto mechanical turning for automotive and heavy vehicle components.' }
+			] as service}
+				<div class="rounded-lg border border-white/10 bg-navy-800/50 p-5 transition-all hover:border-gold-500/20">
+					<h3 class="text-sm sm:text-base font-bold text-white">{service.title}</h3>
+					<p class="mt-1.5 text-xs sm:text-sm text-gray-400">{service.desc}</p>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
 
 <!-- CTA -->
 <section class="bg-navy-800 py-16 sm:py-20">

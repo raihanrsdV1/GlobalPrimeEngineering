@@ -2,7 +2,7 @@
 	let currentSlide = $state(0);
 	const slides = [
 		{ image: '/images/precision-machining.png', title: 'Precision Machining' },
-		{ image: '/images/industrial-maintenance.png', title: 'Industrial Maintenance' },
+		{ image: '/images/industrial-maintenance-2.png', title: 'Industrial Maintenance' },
 		{ image: '/images/cnc-laser-cutting.jpg', title: 'CNC Laser Cutting' },
 		{ image: '/images/advanced-fabrication.png', title: 'Advanced Fabrication' }
 	];
@@ -104,7 +104,7 @@
 				<p class="mt-1 text-xs sm:text-sm text-gray-400">Ton Press Capacity</p>
 			</div>
 			<div class="text-center">
-				<p class="text-2xl sm:text-3xl font-bold text-gold-400">6m</p>
+				<p class="text-2xl sm:text-3xl font-bold text-gold-400">10m</p>
 				<p class="mt-1 text-xs sm:text-sm text-gray-400">Max Lathe Capacity</p>
 			</div>
 			<div class="text-center">
@@ -114,6 +114,44 @@
 			<div class="text-center">
 				<p class="text-2xl sm:text-3xl font-bold text-gold-400">100%</p>
 				<p class="mt-1 text-xs sm:text-sm text-gray-400">Client Satisfaction</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ISO Certifications -->
+<section class="bg-navy-800 py-12 sm:py-16 border-b border-white/5">
+	<div class="mx-auto max-w-5xl px-4 sm:px-6">
+		<div class="text-center mb-8">
+			<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">Quality Assurance</span>
+			<h2 class="mt-2 text-xl sm:text-2xl lg:text-3xl font-bold text-white">ISO Certified Excellence</h2>
+		</div>
+		<div class="rounded-2xl border border-gold-500/20 bg-navy-900/60 p-4 sm:p-6 lg:p-8">
+			<div class="grid grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
+				<div class="flex flex-col items-center">
+					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
+						<img src="/images/iso-14001.webp" alt="ISO 14001 Environmental Management System Certificate" class="w-full h-auto" loading="lazy" />
+					</div>
+					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 14001</p>
+				</div>
+				<div class="flex flex-col items-center">
+					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
+						<img src="/images/iso-9001.webp" alt="ISO 9001 Quality Management System Certificate" class="w-full h-auto" loading="lazy" />
+					</div>
+					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 9001</p>
+				</div>
+				<div class="flex flex-col items-center">
+					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
+						<img src="/images/iso-3834-2.webp" alt="ISO 3834-2 Welding Quality Certificate" class="w-full h-auto" loading="lazy" />
+					</div>
+					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 3834-2</p>
+				</div>
+				<div class="flex flex-col items-center">
+					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
+						<img src="/images/iso-45001.webp" alt="ISO 45001 Occupational Health and Safety Certificate" class="w-full h-auto" loading="lazy" />
+					</div>
+					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 45001</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -157,7 +195,7 @@
 			<div class="group relative overflow-hidden rounded-xl border border-white/10 bg-navy-800 transition-all hover:border-gold-500/30 hover:shadow-lg hover:shadow-gold-500/5">
 				<div class="aspect-[4/3] overflow-hidden">
 					<img
-						src="/images/industrial-maintenance.png"
+						src="/images/industrial-maintenance-2.png"
 						alt="Industrial maintenance and repair services for heavy-duty equipment"
 						class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
 						loading="lazy"
