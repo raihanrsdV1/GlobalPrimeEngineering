@@ -7,7 +7,8 @@ Official website for **Global Prime Engineering Turning Workshop LLC**, built wi
 ## Project Structure
 
 - [site](site) → SvelteKit application source
-- [site/src/routes](site/src/routes) → website pages (`/`, `/about`, `/services`, `/equipment`, `/contact`)
+- [site/src/routes](site/src/routes) → website pages (`/`, `/about`, `/services`, `/equipment`, `/blog`, `/contact`)
+- [site/src/lib/blog/posts](site/src/lib/blog/posts) → one file per service article
 - [site/static/images](site/static/images) → static assets
 
 ---
@@ -80,6 +81,22 @@ Recommended branch names:
 - `feature/about-mission-vision`
 - `fix/contact-form-options`
 - `chore/content-cleanup`
+
+---
+
+## Blog (Service Guides) & SEO
+
+Each service has an article at `/blog/<slug>`. Posts marked `featured: true` appear as cards on the home page; all posts are listed on `/blog`.
+
+To add or edit a post:
+
+1. Create or edit `site/src/lib/blog/posts/<slug>.ts` (copy an existing post as a template).
+2. Register a new post in [site/src/lib/blog/index.ts](site/src/lib/blog/index.ts).
+3. Generate its images (needs ImageMagick):
+	- `cd site && scripts/blog-images.sh static/images/<photo> <slug>`
+4. Run `npm run check && npm run build`.
+
+The sitemap (`/sitemap.xml`), page titles, descriptions, canonical URLs, social previews and structured data (JSON-LD) are generated automatically. Shared business details (phone, WhatsApp, address, hours) live in [site/src/lib/site.ts](site/src/lib/site.ts).
 
 ---
 

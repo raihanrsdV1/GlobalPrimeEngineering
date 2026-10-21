@@ -1,6 +1,37 @@
-<svelte:head>
-	<title>Contact Us | Global Prime Engineering & Turning Workshop LLC</title>
-</svelte:head>
+<script lang="ts">
+	import Seo from '$lib/components/Seo.svelte';
+	import { businessSchema, graph } from '$lib/seo';
+
+	const serviceOptions = [
+		{ value: 'engine-rebuilding', label: 'Engine Rebuilding & Cylinder Block Boring' },
+		{ value: 'crankshaft-grinding', label: 'Crankshaft Grinding' },
+		{ value: 'cnc-machining', label: 'CNC Lathe & Milling' },
+		{ value: 'laser-cutting', label: 'Laser Cutting & Waterjet Machining' },
+		{ value: 'welding', label: 'Arc MIG/TIG Welding' },
+		{ value: 'motor-rewinding', label: 'Motor Rewinding (AC & DC)' },
+		{ value: 'hydraulic', label: 'Hydraulic Equipment Servicing' },
+		{ value: 'fabrication', label: 'Industrial Fabrication' },
+		{ value: 'gear-making', label: 'Gear Making & Gearbox Repair' },
+		{ value: 'moulding', label: 'Moulding Work (Cast Iron, Bronze & Brass)' },
+		{ value: 'grinding', label: 'Surface & Cylindrical Grinding' },
+		{ value: 'oilfield', label: 'Oilfield Equipment' },
+		{ value: 'other', label: 'Other' }
+	];
+
+	let service = $state('');
+
+	// Blog articles link here with ?service=<value> to pre-select the enquiry type.
+	$effect(() => {
+		const requested = new URLSearchParams(window.location.search).get('service');
+		if (requested && serviceOptions.some((option) => option.value === requested)) service = requested;
+	});
+</script>
+
+<Seo
+	title="Contact Us | Global Prime Engineering & Turning Workshop LLC"
+	description="Contact Global Prime Engineering in Industrial Area 2, Sharjah. Call +971 6 561 2799, WhatsApp +971 54 257 6771 or email us for a quote."
+	jsonLd={graph(businessSchema())}
+/>
 
 <!-- Page Hero - Parallax -->
 <section class="page-hero relative min-h-[50vh] sm:min-h-[60vh] flex items-end overflow-hidden">
@@ -55,17 +86,11 @@
 
 					<div>
 						<label for="service" class="block text-sm font-medium text-gray-300">Service Required</label>
-						<select id="service" name="service" class="mt-1.5 w-full rounded-lg border border-white/10 bg-navy-900/50 px-4 py-3 text-sm text-white transition-colors focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500">
+						<select id="service" name="service" bind:value={service} class="mt-1.5 w-full rounded-lg border border-white/10 bg-navy-900/50 px-4 py-3 text-sm text-white transition-colors focus:border-gold-500 focus:outline-none focus:ring-1 focus:ring-gold-500">
 							<option value="">Select a service</option>
-							<option value="engine-rebuilding">Engine Rebuilding & Cylinder Block Boring</option>
-							<option value="crankshaft-grinding">Crankshaft Grinding</option>
-							<option value="cnc-machining">CNC Lathe & Milling</option>
-							<option value="laser-cutting">Laser Cutting & Waterjet Machining</option>
-							<option value="welding">Arc MIG/TIG Welding</option>
-							<option value="motor-rewinding">Motor Rewinding (AC & DC)</option>
-							<option value="hydraulic">Hydraulic Equipment Servicing</option>
-							<option value="fabrication">Industrial Fabrication</option>
-							<option value="other">Other</option>
+							{#each serviceOptions as option}
+								<option value={option.value}>{option.label}</option>
+							{/each}
 						</select>
 					</div>
 

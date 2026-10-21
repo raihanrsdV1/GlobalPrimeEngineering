@@ -1,4 +1,10 @@
 <script lang="ts">
+	import Seo from '$lib/components/Seo.svelte';
+	import BlogCard from '$lib/components/BlogCard.svelte';
+	import { businessSchema, graph, websiteSchema } from '$lib/seo';
+
+	let { data } = $props();
+
 	let currentSlide = $state(0);
 	const slides = [
 		{ image: '/images/precision-machining.png', title: 'Precision Machining' },
@@ -15,9 +21,11 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Global Prime Engineering & Turning Workshop LLC | Sharjah, UAE</title>
-</svelte:head>
+<Seo
+	title="Global Prime Engineering & Turning Workshop LLC | Sharjah, UAE"
+	description="ISO-certified turning workshop in Sharjah Industrial Area 2: CNC machining, engine rebuilding, crankshaft grinding, laser cutting, welding and fabrication."
+	jsonLd={graph(websiteSchema(), businessSchema(data.services))}
+/>
 
 <!-- Hero Section with Auto-Sliding Background -->
 <section class="relative h-[72vh] min-h-[520px] max-h-[920px] overflow-hidden sm:h-screen sm:min-h-[600px] sm:max-h-[1000px]">
@@ -312,6 +320,51 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Service Guides (Blog) -->
+<section class="bg-navy-900 py-16 sm:py-24">
+	<div class="mx-auto max-w-7xl px-4 sm:px-6">
+		<div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+			<div>
+				<span class="text-xs sm:text-sm font-semibold tracking-wider text-gold-400 uppercase">From Our Blog</span>
+				<h2 class="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-white">Service Guides & Insights</h2>
+				<p class="mt-3 max-w-2xl text-sm sm:text-base text-gray-400">
+					Practical advice from our Sharjah workshop on keeping engines, machines and equipment running, and how we can help.
+				</p>
+			</div>
+			<a
+				href="/blog"
+				class="hidden shrink-0 items-center gap-2 rounded-lg border-2 border-gold-500/30 px-5 py-2.5 text-sm font-semibold text-gold-400 transition-all hover:border-gold-500 hover:bg-gold-500/10 sm:inline-flex"
+			>
+				View All Articles
+				<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+				</svg>
+			</a>
+		</div>
+
+		<!-- Swipeable row on phones, grid from tablet up -->
+		<div class="-mx-4 mt-10 flex snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-4 sm:mx-0 sm:mt-12 sm:grid sm:grid-cols-2 sm:gap-5 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-3">
+			{#each data.featuredPosts as post (post.slug)}
+				<div class="w-[85%] shrink-0 snap-start sm:w-auto">
+					<BlogCard {post} />
+				</div>
+			{/each}
+		</div>
+
+		<div class="mt-6 text-center sm:hidden">
+			<a
+				href="/blog"
+				class="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-gold-500/30 px-6 py-3 text-sm font-semibold text-gold-400 transition-all hover:border-gold-500 hover:bg-gold-500/10"
+			>
+				View All Articles
+				<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+				</svg>
+			</a>
 		</div>
 	</div>
 </section>

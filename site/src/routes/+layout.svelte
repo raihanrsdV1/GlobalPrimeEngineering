@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import WhatsAppButton from '$lib/components/WhatsAppButton.svelte';
 
 	let { children } = $props();
 	let mobileMenuOpen = $state(false);
@@ -10,7 +11,18 @@
 		{ href: '/about', label: 'About Us' },
 		{ href: '/services', label: 'Services' },
 		{ href: '/equipment', label: 'Equipment' },
+		{ href: '/blog', label: 'Blog' },
 		{ href: '/contact', label: 'Contact' }
+	];
+
+	const footerServices = [
+		{ href: '/blog/engine-rebuilding-sharjah', label: 'Engine Rebuilding' },
+		{ href: '/blog/crankshaft-grinding-sharjah', label: 'Crankshaft Grinding' },
+		{ href: '/blog/cnc-machining-sharjah', label: 'CNC Machining' },
+		{ href: '/blog/laser-cutting-waterjet-sharjah', label: 'Laser Cutting' },
+		{ href: '/blog/mig-tig-welding-sharjah', label: 'Industrial Welding' },
+		{ href: '/blog/motor-rewinding-sharjah', label: 'Motor Rewinding' },
+		{ href: '/blog/hydraulic-cylinder-repair-sharjah', label: 'Hydraulic Repair' }
 	];
 
 	function handleScroll() {
@@ -138,11 +150,11 @@
 			<div>
 				<h3 class="mb-4 text-sm font-semibold tracking-wider text-gold-400 uppercase">Our Services</h3>
 				<ul class="space-y-2.5">
-					<li><a href="/services" class="text-sm text-gray-400 transition-colors hover:text-white">Engine Rebuilding</a></li>
-					<li><a href="/services" class="text-sm text-gray-400 transition-colors hover:text-white">CNC Machining</a></li>
-					<li><a href="/services" class="text-sm text-gray-400 transition-colors hover:text-white">Laser Cutting</a></li>
-					<li><a href="/services" class="text-sm text-gray-400 transition-colors hover:text-white">Industrial Welding</a></li>
-					<li><a href="/services" class="text-sm text-gray-400 transition-colors hover:text-white">Motor Rewinding</a></li>
+					{#each footerServices as service}
+						<li>
+							<a href={service.href} class="text-sm text-gray-400 transition-colors hover:text-white">{service.label}</a>
+						</li>
+					{/each}
 				</ul>
 			</div>
 
@@ -196,3 +208,5 @@
 		</div>
 	</div>
 </footer>
+
+<WhatsAppButton />

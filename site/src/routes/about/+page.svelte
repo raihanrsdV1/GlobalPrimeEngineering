@@ -1,6 +1,11 @@
-<svelte:head>
-	<title>About Us | Global Prime Engineering & Turning Workshop LLC</title>
-</svelte:head>
+<script lang="ts">
+	import Seo from '$lib/components/Seo.svelte';
+</script>
+
+<Seo
+	title="About Us | Global Prime Engineering & Turning Workshop LLC"
+	description="Sharjah engineering workshop with a family legacy since 1968: precision turning, machining, fabrication and maintenance for industrial and marine sectors."
+/>
 
 <!-- Page Hero - Parallax -->
 <section class="page-hero relative min-h-[50vh] sm:min-h-[60vh] flex items-end overflow-hidden">

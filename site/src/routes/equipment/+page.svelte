@@ -1,6 +1,11 @@
-<svelte:head>
-	<title>Equipment & Facility | Global Prime Engineering & Turning Workshop LLC</title>
-</svelte:head>
+<script lang="ts">
+	import Seo from '$lib/components/Seo.svelte';
+</script>
+
+<Seo
+	title="Equipment & Facility | Global Prime Engineering & Turning Workshop LLC"
+	description="Inside our Sharjah workshop: 400-ton hydraulic press, CNC lathe and milling, CNC laser, waterjet, crankshaft grinding, line boring and dynamic balancing."
+/>
 
 <!-- Page Hero - Parallax -->
 <section class="page-hero relative min-h-[50vh] sm:min-h-[60vh] flex items-end overflow-hidden">

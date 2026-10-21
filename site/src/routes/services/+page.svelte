@@ -1,6 +1,20 @@
-<svelte:head>
-	<title>Our Services | Global Prime Engineering & Turning Workshop LLC</title>
-</svelte:head>
+<script lang="ts">
+	import Seo from '$lib/components/Seo.svelte';
+</script>
+
+<Seo
+	title="Engineering & Machining Services in Sharjah | Global Prime Engineering"
+	description="CNC machining, crankshaft grinding, engine rebuilding, laser and waterjet cutting, MIG/TIG welding, motor rewinding, hydraulics and fabrication in Sharjah."
+/>
+
+{#snippet guideLink(slug: string, label: string)}
+	<a href="/blog/{slug}" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-400 transition-colors hover:text-gold-300">
+		{label}
+		<svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+		</svg>
+	</a>
+{/snippet}
 
 <!-- Page Hero - Parallax -->
 <section class="page-hero relative min-h-[50vh] sm:min-h-[60vh] flex items-end overflow-hidden">
@@ -22,20 +36,20 @@
 	<div class="mx-auto max-w-7xl px-4 sm:px-6">
 		<div class="flex flex-wrap gap-2.5 sm:gap-3">
 			{#each [
-				'CNC Lathe & Milling',
-				'Crankshaft Grinding',
-				'Engine Rebuilding',
-				'Laser Cutting & Waterjet',
-				'Arc MIG/TIG Welding',
-				'Motor Rewinding (AC & DC)',
-				'Hydraulic Servicing',
-				'Gear Making & Repair',
-				'Fabrication & Forming',
-				'Moulding Work',
-				'Surface Grinding',
-				'Oilfield Equipment'
+				{ label: 'CNC Lathe & Milling', slug: 'cnc-machining-sharjah' },
+				{ label: 'Crankshaft Grinding', slug: 'crankshaft-grinding-sharjah' },
+				{ label: 'Engine Rebuilding', slug: 'engine-rebuilding-sharjah' },
+				{ label: 'Laser Cutting & Waterjet', slug: 'laser-cutting-waterjet-sharjah' },
+				{ label: 'Arc MIG/TIG Welding', slug: 'mig-tig-welding-sharjah' },
+				{ label: 'Motor Rewinding (AC & DC)', slug: 'motor-rewinding-sharjah' },
+				{ label: 'Hydraulic Servicing', slug: 'hydraulic-cylinder-repair-sharjah' },
+				{ label: 'Gear Making & Repair', slug: 'gear-manufacturing-gearbox-repair-sharjah' },
+				{ label: 'Fabrication & Forming', slug: 'steel-fabrication-sharjah' },
+				{ label: 'Moulding Work', slug: 'metal-casting-moulding-sharjah' },
+				{ label: 'Surface Grinding', slug: 'surface-cylindrical-grinding-sharjah' },
+				{ label: 'Oilfield Equipment', slug: 'oilfield-equipment-manufacturing-uae' }
 			] as item}
-				<span class="rounded-full border border-gold-500/30 bg-gold-500/10 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-gold-300">{item}</span>
+				<a href="/blog/{item.slug}" class="rounded-full border border-gold-500/30 bg-gold-500/10 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-gold-300 transition-colors hover:border-gold-500/60 hover:bg-gold-500/20 hover:text-white">{item.label}</a>
 			{/each}
 		</div>
 	</div>
@@ -64,6 +78,7 @@
 						</li>
 					{/each}
 				</ul>
+				{@render guideLink('cnc-machining-sharjah', 'Read our CNC machining guide')}
 			</div>
 			<div>
 				<img src="/images/cnc-milling.jpeg" alt="CNC lathe and milling machining" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
@@ -115,6 +130,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="mt-4 text-center">
+				{@render guideLink('steel-fabrication-sharjah', 'Read our steel fabrication guide')}
+			</div>
 		</div>
 	</div>
 </section>
@@ -146,6 +164,7 @@
 						</li>
 					{/each}
 				</ul>
+				{@render guideLink('crankshaft-grinding-sharjah', 'Read our crankshaft grinding guide')}
 			</div>
 		</div>
 	</div>
@@ -174,6 +193,7 @@
 						</li>
 					{/each}
 				</ul>
+				{@render guideLink('engine-rebuilding-sharjah', 'Read our engine rebuilding guide')}
 			</div>
 			<div>
 				<img src="/images/precision-machining.png" alt="Engine rebuilding and cylinder block boring" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
@@ -212,6 +232,7 @@
 						</li>
 					{/each}
 				</ul>
+				{@render guideLink('laser-cutting-waterjet-sharjah', 'Read our laser & waterjet cutting guide')}
 			</div>
 		</div>
 	</div>
@@ -241,6 +262,7 @@
 						</li>
 					{/each}
 				</ul>
+				{@render guideLink('mig-tig-welding-sharjah', 'Read our welding guide')}
 			</div>
 			<div>
 				<img src="/images/specialized-welding.png" alt="Professional MIG TIG welding" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
@@ -275,6 +297,7 @@
 						</li>
 					{/each}
 				</ul>
+				{@render guideLink('motor-rewinding-sharjah', 'Read our motor rewinding guide')}
 			</div>
 		</div>
 	</div>
@@ -303,6 +326,7 @@
 						</li>
 					{/each}
 				</ul>
+				{@render guideLink('hydraulic-cylinder-repair-sharjah', 'Read our hydraulic cylinder repair guide')}
 			</div>
 			<div>
 				<img src="/images/hydraulic-press.jpeg" alt="Hydraulic equipment servicing" class="rounded-xl shadow-2xl shadow-black/30 border border-white/10 w-full" loading="lazy" />
@@ -326,16 +350,16 @@
 
 		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 			{#each [
-				{ title: 'Gear Making & Shaper Works', desc: 'All types of gear manufacturing, hobbing, and shaper machine operations for industrial gears.' },
-				{ title: 'Gear Box Making & Repairing', desc: 'Complete gear box assembly, repair, and reconditioning for industrial and automotive applications.' },
-				{ title: 'Moulding Work', desc: 'Precision moulding in CI, Cast Iron, Bronze, and Brass for custom industrial components.' },
-				{ title: 'Surface & Cylindrical Grinding', desc: 'High-precision surface and cylindrical grinding for tight-tolerance machined parts.' },
+				{ title: 'Gear Making & Shaper Works', desc: 'All types of gear manufacturing, hobbing, and shaper machine operations for industrial gears.', slug: 'gear-manufacturing-gearbox-repair-sharjah' },
+				{ title: 'Gear Box Making & Repairing', desc: 'Complete gear box assembly, repair, and reconditioning for industrial and automotive applications.', slug: 'gear-manufacturing-gearbox-repair-sharjah' },
+				{ title: 'Moulding Work', desc: 'Precision moulding in CI, Cast Iron, Bronze, and Brass for custom industrial components.', slug: 'metal-casting-moulding-sharjah' },
+				{ title: 'Surface & Cylindrical Grinding', desc: 'High-precision surface and cylindrical grinding for tight-tolerance machined parts.', slug: 'surface-cylindrical-grinding-sharjah' },
 				{ title: 'Axle Assembly & Repairing', desc: 'Specialized repair and modification of heavy vehicle axles with straightening and welding.' },
 				{ title: 'Belt Conveyor Making & Repairing', desc: 'Design, fabrication, and repair of belt conveyor systems for industrial material handling.' },
 				{ title: 'Dies & Tools Making', desc: 'Custom dies, jigs, fixtures, and precision tooling for manufacturing operations.' },
 				{ title: 'Nylon, Teflon & MS Roller Making', desc: 'Manufacturing of nylon, Teflon, and mild steel rollers for conveyor and industrial use.' },
-				{ title: 'Oilfield Equipment Manufacturing', desc: 'Manufacturing and repair of oilfield equipment for the petroleum and energy sector.' },
-				{ title: 'Steel Mezzanine Floor Making', desc: 'Design and fabrication of steel mezzanine floors for warehouses and industrial facilities.' },
+				{ title: 'Oilfield Equipment Manufacturing', desc: 'Manufacturing and repair of oilfield equipment for the petroleum and energy sector.', slug: 'oilfield-equipment-manufacturing-uae' },
+				{ title: 'Steel Mezzanine Floor Making', desc: 'Design and fabrication of steel mezzanine floors for warehouses and industrial facilities.', slug: 'steel-fabrication-sharjah' },
 				{ title: 'Machine Installation & Aligning', desc: 'Industrial machine manufacturing, precision installation, and alignment services.' },
 				{ title: 'Crusher & Cement Plant Equipment', desc: 'Development and repair of crusher and cement plant equipment and components.' },
 				{ title: 'Product Design & Development', desc: 'End-to-end product design, prototyping, and development for custom engineering needs.' },
@@ -345,6 +369,14 @@
 				<div class="rounded-lg border border-white/10 bg-navy-800/50 p-5 transition-all hover:border-gold-500/20">
 					<h3 class="text-sm sm:text-base font-bold text-white">{service.title}</h3>
 					<p class="mt-1.5 text-xs sm:text-sm text-gray-400">{service.desc}</p>
+					{#if service.slug}
+						<a href="/blog/{service.slug}" class="mt-3 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-gold-400 transition-colors hover:text-gold-300">
+							Read guide<span class="sr-only">: {service.title}</span>
+							<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+							</svg>
+						</a>
+					{/if}
 				</div>
 			{/each}
 		</div>
