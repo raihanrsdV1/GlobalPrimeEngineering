@@ -1,9 +1,18 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo.svelte';
 	import BlogCard from '$lib/components/BlogCard.svelte';
+	import Lightbox from '$lib/components/Lightbox.svelte';
 	import { businessSchema, graph, websiteSchema } from '$lib/seo';
 
 	let { data } = $props();
+
+	const certificates = [
+		{ code: 'ISO 14001', caption: 'ISO 14001:2015 – Environmental Management System', alt: 'ISO 14001 Environmental Management System Certificate', src: '/images/iso-14001.webp', thumb: '/images/iso-14001-thumb.webp', width: 2717, height: 3780 },
+		{ code: 'ISO 9001', caption: 'ISO 9001:2015 – Quality Management System', alt: 'ISO 9001 Quality Management System Certificate', src: '/images/iso-9001.webp', thumb: '/images/iso-9001-thumb.webp', width: 2717, height: 3780 },
+		{ code: 'ISO 3834-2', caption: 'ISO 3834-2:2021 – Quality Requirements for Fusion Welding', alt: 'ISO 3834-2 Welding Quality Certificate', src: '/images/iso-3834-2.webp', thumb: '/images/iso-3834-2-thumb.webp', width: 2717, height: 3780 },
+		{ code: 'ISO 45001', caption: 'ISO 45001:2018 – Occupational Health & Safety Management System', alt: 'ISO 45001 Occupational Health and Safety Certificate', src: '/images/iso-45001.webp', thumb: '/images/iso-45001-thumb.webp', width: 2717, height: 3780 }
+	];
+	let openCertificate = $state<number | null>(null);
 
 	let currentSlide = $state(0);
 	const slides = [
@@ -136,34 +145,33 @@
 		</div>
 		<div class="rounded-2xl border border-gold-500/20 bg-navy-900/60 p-4 sm:p-6 lg:p-8">
 			<div class="grid grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
-				<div class="flex flex-col items-center">
-					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
-						<img src="/images/iso-14001.webp" alt="ISO 14001 Environmental Management System Certificate" class="w-full h-auto" loading="lazy" />
+				{#each certificates as certificate, i}
+					<div class="flex flex-col items-center">
+						<button
+							type="button"
+							onclick={() => (openCertificate = i)}
+							class="group relative block w-full cursor-zoom-in overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg transition-all hover:border-gold-500/60 hover:shadow-xl hover:shadow-gold-500/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400"
+							aria-label="Enlarge {certificate.code} certificate"
+						>
+							<img src={certificate.thumb} alt={certificate.alt} width="600" height="835" class="h-auto w-full transition-transform duration-300 group-hover:scale-105" loading="lazy" />
+							<span class="absolute inset-0 flex items-center justify-center transition-colors duration-300 group-hover:bg-navy-900/35" aria-hidden="true">
+								<span class="flex h-9 w-9 scale-75 items-center justify-center rounded-full bg-gold-500 text-navy-900 opacity-0 shadow-lg transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 sm:h-11 sm:w-11">
+									<svg class="h-4 w-4 sm:h-5 sm:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+									</svg>
+								</span>
+							</span>
+						</button>
+						<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">{certificate.code}</p>
 					</div>
-					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 14001</p>
-				</div>
-				<div class="flex flex-col items-center">
-					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
-						<img src="/images/iso-9001.webp" alt="ISO 9001 Quality Management System Certificate" class="w-full h-auto" loading="lazy" />
-					</div>
-					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 9001</p>
-				</div>
-				<div class="flex flex-col items-center">
-					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
-						<img src="/images/iso-3834-2.webp" alt="ISO 3834-2 Welding Quality Certificate" class="w-full h-auto" loading="lazy" />
-					</div>
-					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 3834-2</p>
-				</div>
-				<div class="flex flex-col items-center">
-					<div class="overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
-						<img src="/images/iso-45001.webp" alt="ISO 45001 Occupational Health and Safety Certificate" class="w-full h-auto" loading="lazy" />
-					</div>
-					<p class="mt-2 text-[10px] sm:text-xs font-semibold text-gold-400 text-center">ISO 45001</p>
-				</div>
+				{/each}
 			</div>
+			<p class="mt-5 text-center text-xs text-gray-400">Click or tap a certificate to view it full size.</p>
 		</div>
 	</div>
 </section>
+
+<Lightbox images={certificates} bind:index={openCertificate} />
 
 <!-- Four Pillars of Excellence -->
 <section class="bg-navy-900 py-16 sm:py-24">

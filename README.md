@@ -96,7 +96,7 @@ To add or edit a post:
 	- `cd site && scripts/blog-images.sh static/images/<photo> <slug>`
 4. Run `npm run check && npm run build`.
 
-The sitemap (`/sitemap.xml`), page titles, descriptions, canonical URLs, social previews and structured data (JSON-LD) are generated automatically. Shared business details (phone, WhatsApp, address, hours) live in [site/src/lib/site.ts](site/src/lib/site.ts).
+The sitemap (`/sitemap.xml`), the AI-assistant summary (`/llms.txt`), page titles, descriptions, canonical URLs, social previews and structured data (JSON-LD) are generated automatically. Shared business details (phone, WhatsApp, address, hours, map embed) live in [site/src/lib/site.ts](site/src/lib/site.ts).
 
 ---
 

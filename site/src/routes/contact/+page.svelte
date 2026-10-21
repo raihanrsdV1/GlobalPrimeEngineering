@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Seo from '$lib/components/Seo.svelte';
 	import { businessSchema, graph } from '$lib/seo';
+	import { SITE } from '$lib/site';
 
 	const serviceOptions = [
 		{ value: 'engine-rebuilding', label: 'Engine Rebuilding & Cylinder Block Boring' },
@@ -110,9 +111,9 @@
 				<!-- Google Maps Embed -->
 				<div class="overflow-hidden rounded-2xl border border-white/10 bg-navy-800">
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.4890844882046!2d55.41931!3d25.33228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5bc683c0e6af%3A0xbb8e532759ce56a8!2sGlobal%20Prime%20Engineering%20%26%20Turning%20Workshop%20LLC!5e0!3m2!1sen!2sae!4v1712700000000!5m2!1sen!2sae"
+						src={SITE.mapEmbedUrl}
 						width="100%"
-						height="300"
+						height="360"
 						style="border:0;"
 						allowfullscreen
 						loading="lazy"

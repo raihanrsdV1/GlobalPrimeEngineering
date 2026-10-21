@@ -31,7 +31,8 @@ export function businessSchema(services: { name: string; slug: string }[] = []):
 			addressCountry: SITE.address.country
 		},
 		geo: { '@type': 'GeoCoordinates', latitude: SITE.geo.latitude, longitude: SITE.geo.longitude },
-		hasMap: SITE.mapUrl,
+		hasMap: SITE.mapPlaceUrl,
+		sameAs: [SITE.mapPlaceUrl],
 		openingHoursSpecification: {
 			'@type': 'OpeningHoursSpecification',
 			dayOfWeek: ['Saturday', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
